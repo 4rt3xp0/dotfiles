@@ -1,0 +1,77 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+general {
+    interval = 1
+    colors = true
+}
+
+#order += "ipv6"
+order += "wireless wlan0"
+order += "ethernet eth0"
+#order += "cpu_usage"
+#order += "load"
+order += "volume master"
+order += "battery 0"
+order += "tztime local"
+order += "time"
+order += "ddate"
+
+wireless wlan0 {
+    format_up = "直 %ip (%quality)"
+    format_down = "睊 down"
+    #color_degraded = "#1793d0"  # blue, the same as color_good to override color switching
+    #color_bad = "#888888"
+}
+
+ethernet eth0 {
+    # if you use %speed, i3status requires the cap_net_admin capability
+    format_up = " %ip"
+    format_down = " down"
+    # color_bad = "#888888"
+}
+
+cpu_usage {
+    format = "CPU: %usage"
+    min_width = "CPU: 100%"
+    align = left
+}
+
+load {
+    format = "%1min"
+}
+
+battery 0 {
+    #format = "%status %percentage %remaining %emptytime"
+    format = "%status %percentage"
+    format_down = "?"
+    path = "/sys/class/power_supply/BAT%d/uevent"
+    last_full_capacity = true
+    integer_battery_capacity = true
+    status_chr = "⚡"
+    status_bat = "🔋"
+    status_unk = "?"
+    status_full = " "
+    low_threshold = 10
+    threshold_type = time
+}
+
+volume master {
+    format = "墳 %volume"
+    format_muted = "婢 %volume"
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+}
+
+tztime local{
+    format = " %H:%M:%S"
+}
+
+time{
+    format = " %A %d.%B"
+}
+
+ddate{
+    format=""
+}

@@ -1,0 +1,9 @@
+@theme "dracula"
+configuration {
+	modi: "window,drun,ssh";
+	show-icons: true;
+	icon-theme: "Papirus-Dark";
+}
+element-icon {
+	size: 1.9ch;
+}
