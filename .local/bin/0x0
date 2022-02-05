@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ -z $1 ]; then
+	curl -F "file=@$(fzf)" 0x0.st
+else
+	curl -F "file=@$1" 0x0.st
+fi
