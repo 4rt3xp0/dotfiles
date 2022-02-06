@@ -187,13 +187,12 @@ bindcode $mod+Shift+19 move container to workspace number $ws10
 bindsym $mod+Tab workspace back_and_forth
 
 # class                 border  backgr. text    indicator child_border
-client.focused #81a2be  #81a2be #1d1f21 #282a2e
+client.focused          #81a2be #81a2be #1d1f21 #282a2e
 client.focused_inactive #373b41 #373b41 #969896 #282a2e
 client.unfocused        #282a2e #282a2e #969896 #282a2e
 client.urgent           #373b41 #cc6666 #ffffff #cc6666
 client.placeholder      #212121 #0c0c0c #ffffff #212121   #262626
 client.background       #212121
-
 
 bar {
 	font pango: Hack Nerd Font 11
@@ -204,25 +203,14 @@ bar {
 	workspace_buttons       yes
 	strip_workspace_numbers no
 	colors {
-		background  #000000
-		statusline  #dddddd
-		separator   #666666
+		background  #1d1f21
+		statusline  #c5c8c6
+		separator   #969896
 		# class             border  backgr. text
-		focused_workspace   #2b83a6 #2b83a6 #ffffff
-		active_workspace    #212121 #000000 #ffffff
-		inactive_workspace  #212121 #000000 #86888c
-		urgent_workspace    #d64e4e #d64e4e #ffffff
-		binding_mode        #d64e4e #d64e4e #ffffff
-	}
-	colors {
-		background #1d1f21
-		statusline #c5c8c6
-		separator #969896
-		# class             border  backgr. text
-		focused_workspace #81a2be #81a2be #1d1f21 #ffffff
-		active_workspace #373b41 #373b41 #ffffff #ffffff
-		inactive_workspace #282a2e #282a2e #969896 #86888c
-		urgent_workspace #cc6666 #cc6666 #ffffff #ffffff
+		focused_workspace   #81a2be #81a2be #1d1f21 #ffffff
+		active_workspace    #373b41 #373b41 #ffffff #ffffff
+		inactive_workspace  #282a2e #282a2e #969896 #86888c
+		urgent_workspace    #cc6666 #cc6666 #ffffff #ffffff
 
 	}
 }
