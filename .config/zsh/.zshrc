@@ -14,7 +14,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-completions/zsh-completions.plugin.zsh
 source /usr/share/doc/find-the-command/ftc.zsh quiet info
 source /usr/share/fzf/key-bindings.zsh
-_comp_options+=(globdots)
+# _comp_options+=(globdots)
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
