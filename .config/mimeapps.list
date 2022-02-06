@@ -1,6 +1,4 @@
 [Default Applications]
-text/plain=nvim.desktop
-text/x-chdr=nvim.desktop
 application/x-troff-man=text.desktop;
 text/x-shellscript=text.desktop;
 x-scheme-handler/magnet=torrent.desktop;
@@ -18,6 +16,5 @@ text/x-c++src=nvim.desktop
 
 [Added Associations]
 text/plain=nvim.desktop;
-image/png=img.desktop;
 text/x-chdr=nvim.desktop;
 text/x-c++src=nvim.desktop;
