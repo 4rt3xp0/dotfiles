@@ -14,8 +14,10 @@ image/jpeg=img.desktop;
 image/gif=img.desktop;
 application/rss+xml=rss.desktop;
 inode/directory=file.desktop;
+text/x-c++src=nvim.desktop
 
 [Added Associations]
 text/plain=nvim.desktop;
 image/png=img.desktop;
 text/x-chdr=nvim.desktop;
+text/x-c++src=nvim.desktop;
