@@ -7,7 +7,7 @@ HISTFILE="$XDG_CACHE_HOME/.zsh_history"
 ZSH_THEME="robbyrussell"
 # CASE_SENSITIVE="true"
 zstyle ':omz:update' mode disabled
-plugins=(git colored-man-pages)
+plugins=(colored-man-pages)
 
 source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
