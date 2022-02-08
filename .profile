@@ -27,7 +27,7 @@ export FZF_CTRL_T_COMMAND="find . -mindepth 1 2>/dev/null"
 export FZF_DEFAULT_COMMAND="find . -name .git -prune -o -name tmp -prune -o -type f -print 2>/dev/null"
 export FZF_DEFAULT_OPTS="--height 40% --border"
 
-if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+if [ "$(tty)" = "/dev/tty1" ]; then
 	exec startx "$XINITRC"
 else
 	source ~/.bashrc
