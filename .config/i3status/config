@@ -12,6 +12,7 @@ order += "ethernet eth0"
 #order += "cpu_usage"
 #order += "load"
 order += "volume master"
+order += "read_file BRIGHTNESS"
 order += "battery 0"
 order += "memory"
 order += "tztime local"
@@ -67,6 +68,11 @@ volume master {
     device = "default"
     mixer = "Master"
     mixer_idx = 0
+}
+
+read_file BRIGHTNESS {
+	format = " %content"
+	path = "/run/user/1000/brightness"
 }
 
 tztime local{
