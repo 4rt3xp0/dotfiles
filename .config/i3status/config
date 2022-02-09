@@ -13,6 +13,7 @@ order += "ethernet eth0"
 #order += "load"
 order += "volume master"
 order += "battery 0"
+order += "memory"
 order += "tztime local"
 order += "time"
 order += "ddate"
@@ -39,6 +40,10 @@ cpu_usage {
 
 load {
     format = "%1min"
+}
+
+memory {
+	format = "  %used"
 }
 
 battery 0 {
