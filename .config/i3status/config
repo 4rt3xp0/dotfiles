@@ -18,6 +18,7 @@ order += "memory"
 order += "tztime local"
 order += "time"
 order += "ddate"
+order += "read_file LAYOUT"
 
 wireless wlan0 {
     format_up = "直 %ip (%quality)"
@@ -73,6 +74,11 @@ volume master {
 read_file BRIGHTNESS {
 	format = " %content"
 	path = "/run/user/1000/brightness"
+}
+
+read_file LAYOUT {
+	format = "%content"
+	path = "/run/user/1000/layout"
 }
 
 tztime local{
