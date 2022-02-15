@@ -73,11 +73,13 @@ volume master {
 read_file BRIGHTNESS {
 	format = " %content"
 	path = "/run/user/1000/brightness"
+	color_good = "#1793d0"
 }
 
 read_file LAYOUT {
 	format = "%content"
 	path = "/run/user/1000/layout"
+	color_good = "#1793d0"
 }
 
 tztime local{
