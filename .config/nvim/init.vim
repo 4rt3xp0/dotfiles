@@ -71,6 +71,7 @@ let g:AutoPairsShortcutBackInsert = ''
 let g:AutoPairsShortcutFastWrap = ''
 let g:AutoPairsShortcutJump = ''
 autocmd FileType cpp setlocal commentstring=//%s
+autocmd FileType c setlocal commentstring=//%s
 
 let mapleader=" "
 nnoremap <leader>p :PlugUpdate<CR>
