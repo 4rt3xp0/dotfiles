@@ -225,3 +225,6 @@ XTerm.vt100*translations            :       #override \
 
 Sxiv.foreground: #ABB2BF
 Sxiv.background: #282C34
+Nsxiv.window.foreground: #ABB2BF
+Nsxiv.window.background: #282C34
+Nsxiv.bar.foreground: #FFFFFF
