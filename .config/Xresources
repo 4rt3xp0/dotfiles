@@ -42,9 +42,7 @@ st.chscale                          :       1.0
 st.cwscale                          :       1.0
 st.blinktimeout                     :       300
 st.bellvolume                       :       0
-st.boxdraw                          :       1
-st.boxdraw_bold                     :       1
-st.boxdraw_braille                  :       0
+st.boxdraw                          :       1 st.boxdraw_bold                     :       1 st.boxdraw_braille                  :       0
 st.depth                            :       0
 st.opacity                          :       255
 st.disable_alpha_correction         :       1
@@ -65,7 +63,6 @@ XTerm.vt100*utf8                    :       2
 XTerm.vt100*eightBitInput           :       true
 XTerm.vt100*faceName                :       xft:Iosevka Term:style=bold:antialias=true:autohint:true
 XTerm.vt100*faceNameDoublesize      :       xft:Saber:antialias=true:autohint:true
-XTerm.vt100*internalBorder          :       10
 XTerm.vt100*faceSize                :       10.5
 
 XTerm.vt100*saveLines               :       5000
@@ -75,24 +72,24 @@ XTerm.vt100*bellIsUrgent            :       false
 XTerm.vt100*altSendsEscape          :       true
 XTerm.vt100*metaSendsEscape         :       true
 
-XTerm.vt100*foreground              :       #ABB2BF
-XTerm.vt100*background              :       #282C34
-XTerm.vt100*color0                  :       #282C34
-XTerm.vt100*color8                  :       #3E4452
-XTerm.vt100*color1                  :       #E06C75
-XTerm.vt100*color9                  :       #BE5046
-XTerm.vt100*color2                  :       #98C379
-XTerm.vt100*color10                 :       #98C379
-XTerm.vt100*color3                  :       #E5C07B
-XTerm.vt100*color11                 :       #D19A66
-XTerm.vt100*color4                  :       #61AFEF
-XTerm.vt100*color12                 :       #61AFEF
-XTerm.vt100*color5                  :       #C678DD
-XTerm.vt100*color13                 :       #C678DD
-XTerm.vt100*color6                  :       #56B6C2
-XTerm.vt100*color14                 :       #56B6C2
-XTerm.vt100*color7                  :       #ABB2BF
-XTerm.vt100*color15                 :       #5C6370
+XTerm.vt100*foreground              :       #FFFFFF
+XTerm.vt100*background              :       #000000
+/* XTerm.vt100*color0                  :       #282C34 */
+/* XTerm.vt100*color8                  :       #3E4452 */
+/* XTerm.vt100*color1                  :       #E06C75 */
+/* XTerm.vt100*color9                  :       #BE5046 */
+/* XTerm.vt100*color2                  :       #98C379 */
+/* XTerm.vt100*color10                 :       #98C379 */
+/* XTerm.vt100*color3                  :       #E5C07B */
+/* XTerm.vt100*color11                 :       #D19A66 */
+/* XTerm.vt100*color4                  :       #61AFEF */
+/* XTerm.vt100*color12                 :       #61AFEF */
+/* XTerm.vt100*color5                  :       #C678DD */
+/* XTerm.vt100*color13                 :       #C678DD */
+/* XTerm.vt100*color6                  :       #56B6C2 */
+/* XTerm.vt100*color14                 :       #56B6C2 */
+/* XTerm.vt100*color7                  :       #ABB2BF */
+/* XTerm.vt100*color15                 :       #5C6370 */
 
 XTerm.vt100*translations            :       #override \
         Ctrl Shift <Key>C           :       copy-selection(CLIPBOARD) \n\
