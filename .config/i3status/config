@@ -87,7 +87,7 @@ tztime local{
 }
 
 time{
-    format = " %A %d.%B"
+    format = " %b %d (%a)"
 }
 
 ddate{
