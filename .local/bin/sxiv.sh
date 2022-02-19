@@ -49,9 +49,9 @@ open_img () {
     trap 'rm -f $tmp' EXIT
     count="$(listfiles "$1" | grep -nF "$1")"
     if [ -n "$count" ]; then
-        nsxiv -i -n "${count%%:*}" -- < "$tmp"
+        nsxiv -a -i -n "${count%%:*}" -- < "$tmp"
     else
-        nsxiv -- "$@" # fallback
+        nsxiv -a -- "$@" # fallback
     fi
 }
 
