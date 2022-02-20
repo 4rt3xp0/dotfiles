@@ -61,9 +61,9 @@ XTerm.vt100*fading                  :       10
 
 XTerm.vt100*utf8                    :       2
 XTerm.vt100*eightBitInput           :       true
-XTerm.vt100*faceName                :       xft:Iosevka Term:style=bold:antialias=true:autohint:true
-XTerm.vt100*faceNameDoublesize      :       xft:Saber:antialias=true:autohint:true
-XTerm.vt100*faceSize                :       10.5
+XTerm.vt100*faceName                :       Hack Nerd Font:antialias=true:autohint:true
+XTerm.vt100*faceNameDoublesize      :       Hack Nerd Font:antialias=true:autohint:true
+XTerm.vt100*faceSize                :       10
 
 XTerm.vt100*saveLines               :       5000
 XTerm.vt100*scrollTtyKeypress       :       true
