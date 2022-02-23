@@ -7,12 +7,10 @@ macro v set browser "setsid -f mpv --really-quiet --no-terminal" ; open-in-brows
 # refresh-on-startup yes
 # auto-reload yes
 # reload-time 30
-# reload-threads 50
-# prepopulate-query-feeds yes
+reload-threads 50
 # show-read-articles no
 # show-read-feeds no
-# show-keymap-hint no
-# swap-title-and-hints yes
+show-keymap-hint no
 
 bind-key j down
 bind-key k up
