@@ -8,7 +8,7 @@ set nohlsearch incsearch ignorecase smartcase
 set hidden
 set mouse+=a
 set scrolloff=4
-set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab autoindent
+set tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent
 set wrap linebreak
 set ruler laststatus=2
 
