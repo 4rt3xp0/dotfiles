@@ -104,7 +104,7 @@ nmap <Leader>9 <Plug>lightline#bufferline#go(9)
 nmap <Leader>0 <Plug>lightline#bufferline#go(10)
 nmap <C-p> :FZF<CR>
 
-set makeprg=g++\ -o\ %<\ %
+set makeprg=g++\ -std=c++17\ -o\ %<\ %
 autocmd filetype cpp nnoremap <F5> :w<CR>:make<CR>
 autocmd filetype cpp nnoremap <F6> :term ./%<<CR>
 nnoremap <leader>j :cnext<CR>
