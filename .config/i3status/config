@@ -18,6 +18,7 @@ order += "memory"
 order += "tztime local"
 order += "time"
 order += "read_file LAYOUT"
+order += "ddate"
 
 wireless wlan0 {
     format_up = "直 %ip (%quality)"
