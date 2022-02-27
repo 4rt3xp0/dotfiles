@@ -56,12 +56,12 @@ let g:lightline = {
         \   'lineinfo': ' %l:%v'
     \ },
 \ }
-let g:lightline.separator = {
-	\   'left': '', 'right': ''
-	\}
-let g:lightline.subseparator = {
-	\   'left': '', 'right': '' 
-	\}
+" let g:lightline.separator = {
+" 	\   'left': '', 'right': ''
+" 	\}
+" let g:lightline.subseparator = {
+" 	\   'left': '', 'right': '' 
+" 	\}
 let g:lightline.component_raw = {'buffers': 1}
 let g:lightline#bufferline#clickable=1
 let s:palette = g:lightline#colorscheme#{g:lightline.colorscheme}#palette
