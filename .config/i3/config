@@ -142,6 +142,7 @@ for_window [class="Nm-connection-editor"] floating enable
 for_window [class="Blueman-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Xarchiver"] floating enable
+for_window [class="Nitrogen"] floating enable
 for_window [class="supertuxkart"] floating disable
 
 assign [class="firefox"] $ws2
