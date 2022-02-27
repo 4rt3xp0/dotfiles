@@ -64,6 +64,11 @@ let g:lightline.subseparator = {
 	\}
 let g:lightline.component_raw = {'buffers': 1}
 let g:lightline#bufferline#clickable=1
+let s:palette = g:lightline#colorscheme#{g:lightline.colorscheme}#palette
+let s:palette.normal.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
+let s:palette.inactive.middle = s:palette.normal.middle
+let s:palette.tabline.middle = s:palette.normal.middle
+" call insert(s:palette.normal.right, s:palette.normal.left[1], 0)
 
 let g:user_emmet_expandabbr_key = '<Tab>'
 let g:AutoPairsShortcutToggle = ''
