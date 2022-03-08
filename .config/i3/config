@@ -23,6 +23,8 @@ bindsym $mod+Shift+q kill
 # bindsym $mod+d exec --no-startup-id dmenu_run
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+g exec --no-startup-id clipmenu
+bindsym $mod+Shift+g exec --no-startup-id clipdel -d ".*"
 
 # change focus
 bindsym $mod+h focus left
