@@ -9,7 +9,6 @@ general {
 #order += "ipv6"
 order += "wireless wlan0"
 order += "ethernet eth0"
-#order += "cpu_usage"
 #order += "load"
 order += "volume master"
 order += "read_file BRIGHTNESS"
@@ -35,9 +34,8 @@ ethernet eth0 {
 }
 
 cpu_usage {
-    format = "CPU: %usage"
-    min_width = "CPU: 100%"
-    align = left
+    format = " %usage"
+    # min_width = " 100%"
 }
 
 load {
