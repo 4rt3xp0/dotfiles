@@ -149,21 +149,14 @@ for_window [class="Nitrogen"] floating enable
 for_window [class="supertuxkart"] floating disable
 
 assign [class="firefox"] $ws2
-assign [class="discord"] $ws3
 assign [class="Hexchat"] $ws3
-# assign [class="Pcmanfm"] $ws4
-# assign [class="Zathura"] $ws5
-# assign [class="libreoffice"] $ws5
-# assign [class="Audacious"] $ws6
-# assign [class="Gimp"] $ws7
-# assign [class="Inkscape"] $ws7
+assign [class="qtox"] $ws3
+assign [class="Audacious"] $ws5
+assign [class="libreoffice"] $ws7
+assign [class="Gimp"] $ws8
+assign [class="Inkscape"] $ws8
 assign [class="KeePassXC"] $ws9
 assign [class="Transmission-gtk"] $ws9
-assign [class="GParted"] $ws10
-assign [class="Grub-customizer"] $ws10
-assign [class="Lxappearance"] $ws10
-assign [class="Lxinput"] $ws10
-assign [class="Arandr"] $ws10
 
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
