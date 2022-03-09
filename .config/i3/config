@@ -203,6 +203,7 @@ bar {
 	position top
 	tray_output             primary
 	separator_symbol        ""
+	separator_symbol        " "
 	workspace_buttons       yes
 	strip_workspace_numbers no
 	colors {
