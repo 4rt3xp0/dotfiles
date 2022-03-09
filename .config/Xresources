@@ -28,8 +28,8 @@ Xft.hintstyle                       :       hintslight
 
 st.termname                         :       xterm-256color
 st.borderless                       :       0
-st.font                             :       Hack Nerd Font:size=10:antialias=true:autohint:true
-st.borderpx                         :       10
+st.font                             :       Hack Nerd Font:size=10:antialias=true:autohint:true;
+st.borderpx                         :       2
 st.cursorshape                      :       0
 st.cursorthickness                  :       0
 st.cursorblinkstyle                 :       0
