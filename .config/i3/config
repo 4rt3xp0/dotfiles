@@ -9,7 +9,7 @@ smart_borders on
 popup_during_fullscreen smart
 # i3-gaps
 smart_gaps on 
-gaps inner 10
+gaps inner 9
 gaps outer 0
 
 # Font for window titles
