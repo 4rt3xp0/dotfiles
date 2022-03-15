@@ -13,7 +13,7 @@ gaps inner 10
 gaps outer 0
 
 # Font for window titles
-font pango: Source Sans Pro 10
+font pango: Hack Nerd Font 9
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id $TERMINAL
