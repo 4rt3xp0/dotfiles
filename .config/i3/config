@@ -124,6 +124,7 @@ bindsym $mod+Shift+p exec --no-startup-id pavucontrol
 bindsym $mod+Escape exec --no-startup-id dunstctl close-all
 
 # Define names for default workspaces
+set $ws0   "0  "
 set $ws1   "1  "
 set $ws2   "2  "
 set $ws3   "3  "
@@ -134,7 +135,7 @@ set $ws7   "7  "
 set $ws8   "8  "
 set $ws9   "9  "
 set $ws10 "10  "
-bindsym $mod+z exec --no-startup-id "pactl set-sink-mute @DEFAULT_SINK@ 1; playerctl pause"; workspace "11  "; exec $TERMINAL -e htop; exec $TERMINAL -e lf
+bindsym $mod+z exec --no-startup-id "pactl set-sink-mute @DEFAULT_SINK@ 1; playerctl pause"; workspace $ws0; exec $TERMINAL -e htop; exec $TERMINAL -e lf
 
 # for_window [window_role="app"] floating enable
 for_window [window_role="pop-up"] floating enable
@@ -160,6 +161,7 @@ assign [class="Inkscape"] $ws8
 assign [class="KeePassXC"] $ws9
 assign [class="Transmission-gtk"] $ws9
 
+bindcode $mod+49 workspace number $ws0
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
 bindsym $mod+3 workspace number $ws3
@@ -173,6 +175,7 @@ bindsym $mod+9 workspace number $ws9
 bindcode $mod+19 workspace number $ws10
 bindsym $mod+Tab workspace back_and_forth
 
+bindcode $mod+Shift+49 move container to workspace number $ws0
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
