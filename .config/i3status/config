@@ -1,6 +1,4 @@
-# i3status configuration file.
-# see "man i3status" for documentation.
-
+# vim: ft=conf
 general {
     interval = 1
     colors = true
