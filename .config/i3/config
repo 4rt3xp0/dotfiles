@@ -68,7 +68,8 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # Toggle between dock mode and hide mode
-bindsym $mod+b bar mode toggle
+# bindsym $mod+b bar mode toggle
+bindsym $mod+b exec --no-startup-id i3-msg bar mode $(echo -e "dock\ninvisible\nhide" | rofi -dmenu)
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
