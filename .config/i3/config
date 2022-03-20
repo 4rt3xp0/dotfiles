@@ -25,8 +25,8 @@ bindsym $mod+Shift+q kill
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+Shift+d exec --no-startup-id rofi -show window
-bindsym Mod4+Mod1+v exec --no-startup-id clipmenu
-bindsym Mod4+Mod1+c exec --no-startup-id clipdel -d ".*"
+bindsym $mod+Mod1+v exec --no-startup-id clipmenu
+bindsym $mod+Mod1+c exec --no-startup-id clipdel -d ".*" && notify-send "clipmenu" "Clipboard history cleared."
 
 # change focus
 bindsym $mod+h focus left
