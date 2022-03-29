@@ -28,6 +28,21 @@ bindsym $mod+Shift+d exec --no-startup-id rofi -show window
 bindsym $mod+Mod1+v exec --no-startup-id clipmenu
 bindsym $mod+Mod1+c exec --no-startup-id clipdel -d ".*" && notify-send "clipmenu" "Clipboard history cleared."
 
+set $mode_launcher Launch
+bindsym $mod+o mode "$mode_launcher"
+mode "$mode_launcher" {
+    bindsym w exec firefox; mode "default"
+    bindsym f exec pcmanfm; mode "default"
+    bindsym p exec pavucontrol; mode "default"
+    bindsym b exec blueman-manager; mode "default"
+    bindsym n exec nm-connection-editor; mode "default"
+    bindsym d exec discord; mode "default"
+    bindsym t exec telegram-desktop; mode "default"
+    bindsym h exec hexchat; mode "default"
+    bindsym Escape mode "default"
+    bindsym Return mode "default"
+}
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
