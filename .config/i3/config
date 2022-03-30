@@ -157,7 +157,8 @@ set $ws7   "7  "
 set $ws8   "8  "
 set $ws9   "9  "
 set $ws10 "10  "
-bindsym $mod+z exec --no-startup-id "pactl set-sink-mute @DEFAULT_SINK@ 1; playerctl pause"; workspace $ws0; exec $TERMINAL -e htop; exec $TERMINAL -e lf
+bindsym $mod+Shift+z exec --no-startup-id "pactl set-sink-mute @DEFAULT_SINK@ 1; playerctl pause"; workspace $ws0; exec $TERMINAL -e htop; exec $TERMINAL -e lf
+bindsym $mod+z [urgent=latest] focus
 
 # for_window [window_role="app"] floating enable
 for_window [window_role="pop-up"] floating enable
