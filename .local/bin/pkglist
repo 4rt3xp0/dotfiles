@@ -1,0 +1,3 @@
+#!/bin/sh
+expac -H M "%n" $(comm -23 <(pacman -Qqen | sort) <({ pacman -Qqg base-devel; expac -l '\n' '%E' base; } | sort | uniq)) | grep -v base > $XDG_DATA_HOME/pkglist
+expac -H M "%n" $(comm -23 <(pacman -Qqem | sort) <({ pacman -Qqg base-devel; expac -l '\n' '%E' base; } | sort | uniq)) > $XDG_DATA_HOME/pkglist_aur
