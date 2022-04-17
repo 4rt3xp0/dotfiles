@@ -5,3 +5,4 @@ map r reload
 map R rotate
 map i recolor
 map g goto top
+set selection-clipboard clipboard
