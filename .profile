@@ -19,6 +19,7 @@ export INPUTRC="$XDG_CONFIG_HOME/inputrc"
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 export PASSWORD_STORE_DIR="$XDG_DATA_HOME/pass"
 export PASSWORD_STORE_CLIP_TIME=10
+export CM_SELECTIONS="clipboard"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonrc"
 export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
