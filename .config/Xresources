@@ -98,7 +98,9 @@ XTerm.vt100*translations            :       #override \
         Ctrl Shift <Key>V           :       insert-selection(CLIPBOARD) \n\
         Ctrl <Key> minus            :       smaller-vt-font() \n\
         Ctrl <Key> plus             :       larger-vt-font() \n\
-        Ctrl <Key> 0                :       set-vt-font(d)
+        Ctrl <Key> 0                :       set-vt-font(d) \n\
+        <Key>BackSpace              :       string(0x7F) \n\
+        <Key>Delete                 :       string("\033[3~")
 
 Sxiv.foreground: #ABB2BF
 Sxiv.background: #282C34
