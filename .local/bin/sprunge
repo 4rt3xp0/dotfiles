@@ -1,6 +1,6 @@
 #!/bin/sh
 if [ -z $1 ]; then 
-	cat "$(fzf)" | curl -F 'sprunge=<-' http://sprunge.us
+	curl -F 'sprunge=<-' http://sprunge.us
 else
 	cat "$1" | curl -F 'sprunge=<-' http://sprunge.us
 fi
