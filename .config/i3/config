@@ -40,6 +40,7 @@ mode "$mode_launcher" {
     bindsym d exec discord; mode "default"
     bindsym t exec telegram-desktop; mode "default"
     bindsym h exec hexchat; mode "default"
+    bindsym q exec qbittorrent; mode "default"
     bindsym k exec screenkey; mode "default"
     bindsym Shift+k exec killall screenkey; mode "default"
     bindsym m exec pactl set-card-profile bluez_card.74_45_CE_38_FD_94 $(echo -e "a2dp-sink\nheadset-head-unit" | rofi -dmenu); mode "default"
@@ -179,6 +180,7 @@ assign [class="Gimp"] $ws8
 assign [class="Inkscape"] $ws8
 assign [class="KeePassXC"] $ws9
 assign [class="Transmission-gtk"] $ws9
+assign [class="qBittorrent"] $ws9
 
 bindcode $mod+49 workspace number $ws0
 bindsym $mod+1 workspace number $ws1
