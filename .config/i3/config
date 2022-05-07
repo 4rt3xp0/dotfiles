@@ -42,6 +42,7 @@ mode "$mode_launcher" {
     bindsym h exec hexchat; mode "default"
     bindsym k exec screenkey; mode "default"
     bindsym Shift+k exec killall screenkey; mode "default"
+    bindsym m exec pactl set-card-profile bluez_card.74_45_CE_38_FD_94 $(echo -e "a2dp-sink\nheadset-head-unit" | rofi -dmenu); mode "default"
     bindsym Escape mode "default"
     bindsym Return mode "default"
 }
