@@ -45,6 +45,7 @@ mode "$mode_launcher" {
     bindsym Shift+k exec killall screenkey; mode "default"
     bindsym m exec pactl set-card-profile bluez_card.74_45_CE_38_FD_94 $(echo -e "a2dp-sink\nheadset-head-unit" | rofi -dmenu); mode "default"
     bindsym v exec virt-manager; exec systemctl is-active --quiet libvirtd || systemctl start --quiet libvirtd; mode "default"
+    bindsym g exec gimp; mode "default"
     bindsym Escape mode "default"
     bindsym Return mode "default"
 }
