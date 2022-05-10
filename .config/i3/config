@@ -137,9 +137,9 @@ bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -t warning -m 'Do you reall
 bindsym $mod+n exec --no-startup-id xkb-switch -np | cut -c 1-2 > "$XDG_RUNTIME_DIR/layout" && $refresh_i3status
 bindsym --release $mod+x exec --no-startup-id xkill
 bindsym --release $mod+Shift+x exec --no-startup-id killall xkill
-bindsym Print exec --no-startup-id scrot '%Y-%m-%d_$wx$h.png'
-bindsym --release Shift+Print exec --no-startup-id scrot -fs '%Y-%m-%d_$wx$h.png'
-bindsym --release $mod+Print exec --no-startup-id scrot -u '%Y-%m-%d_$wx$h.png'
+bindsym Print exec --no-startup-id scrot "/home/alex/pix/scrot/%Y-%m-%d-%T.png" && notify-send "scrot" "screenshot taken"
+bindsym --release Shift+Print exec --no-startup-id scrot -fs "/home/alex/pix/scrot/%Y-%m-%d-%T.png" && notify-send "scrot" "screenshot taken"
+bindsym --release $mod+Print exec --no-startup-id scrot -u "/home/alex/pix/scrot/%Y-%m-%d-%T.png" && notify-send "scrot" "screenshot taken"
 bindsym $mod+Escape exec --no-startup-id dunstctl close-all
 bindsym $mod+p exec --no-startup-id lxrandr
 
