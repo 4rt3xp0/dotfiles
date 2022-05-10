@@ -119,6 +119,7 @@ bindcode $mod+Shift+20 move scratchpad
 # show the next scratchpad window or hide the focused scratchpad window
 # bindsym $mod+minus scratchpad show
 bindcode $mod+20 scratchpad show
+bindsym F12 scratchpad show
 
 # move focused floating window to the center
 bindsym $mod+m move position center
