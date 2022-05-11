@@ -19,6 +19,7 @@
     border-radius: 6;
     border-color: @bordercolor;
     padding:          5;
+    width:         45%;
 }
 #mainbox {
     border:  0;

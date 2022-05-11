@@ -12,5 +12,5 @@ configuration {
     kb-remove-char-back: "BackSpace";
 }
 element-icon {
-	size: 1.9ch;
+	size: 2ch;
 }
