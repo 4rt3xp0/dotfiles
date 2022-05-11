@@ -52,6 +52,8 @@ mode "$mode_launcher" {
     bindsym Return mode "default"
 }
 
+bindsym $mod+p exec --no-startup-id systemctl $(echo -e "suspend\nreboot\npoweroff" | rofi -dmenu)
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
