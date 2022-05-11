@@ -44,6 +44,7 @@ mode "$mode_launcher" {
     bindsym q exec qbittorrent; mode "default"
     bindsym k exec screenkey; mode "default"
     bindsym Shift+k exec killall screenkey; mode "default"
+    bindsym l exec lxrandr; mode "default"
     bindsym m exec pactl set-card-profile bluez_card.74_45_CE_38_FD_94 $(echo -e "a2dp-sink\nheadset-head-unit" | rofi -dmenu); mode "default"
     bindsym v exec virt-manager; exec systemctl is-active --quiet libvirtd || systemctl start --quiet libvirtd; mode "default"
     bindsym a exec audacious; mode "default"
@@ -143,7 +144,6 @@ bindsym Print exec --no-startup-id scrot "/home/alex/pix/scrot/%Y-%m-%d-%T.png" 
 bindsym --release Shift+Print exec --no-startup-id scrot -fs "/home/alex/pix/scrot/%Y-%m-%d-%T.png" && notify-send "scrot" "screenshot taken"
 bindsym --release $mod+Print exec --no-startup-id scrot -u "/home/alex/pix/scrot/%Y-%m-%d-%T.png" && notify-send "scrot" "screenshot taken"
 bindsym $mod+Escape exec --no-startup-id dunstctl close-all
-bindsym $mod+p exec --no-startup-id lxrandr
 
 # Define names for default workspaces
 set $ws0   "0  "
