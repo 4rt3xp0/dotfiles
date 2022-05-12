@@ -52,7 +52,7 @@ mode "$mode_launcher" {
     bindsym Return mode "default"
 }
 
-bindsym $mod+p exec --no-startup-id powermenu
+bindsym $mod+Shift+p exec --no-startup-id powermenu
 
 # change focus
 bindsym $mod+h focus left
