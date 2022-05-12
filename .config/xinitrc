@@ -14,7 +14,7 @@ xkb-switch -p | cut -c 1-2 > "$XDG_RUNTIME_DIR/layout"
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 nitrogen --restore &
 dunst &
-picom &
+picom --experimental-backends &
 unclutter &
 nm-applet &
 blueman-applet &
