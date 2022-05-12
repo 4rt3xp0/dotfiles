@@ -1,4 +1,4 @@
-@theme "dracula"
+@theme "eric"
 configuration {
 	modi: "window,drun";
 	show-icons: true;
@@ -11,4 +11,3 @@ configuration {
     kb-mode-previous: "Shift+Left,Control+Shift+Tab,Control+h";
     kb-remove-char-back: "BackSpace";
 }
-@theme "eric"
