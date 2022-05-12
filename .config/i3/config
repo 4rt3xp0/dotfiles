@@ -26,8 +26,8 @@ bindsym --whole-window $mod+button2 kill
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+Shift+d exec --no-startup-id rofi -show window
-bindsym $mod+Shift+v exec --no-startup-id clipmenu
-bindsym $mod+Shift+c exec --no-startup-id clipdel -d ".*" && notify-send "clipmenu" "Clipboard history cleared."
+bindsym $mod+Mod1+v exec --no-startup-id clipmenu
+bindsym $mod+Mod1+c exec --no-startup-id clipdel -d ".*" && notify-send "clipmenu" "Clipboard history cleared."
 
 set $mode_launcher Launch
 bindsym $mod+o mode "$mode_launcher"
