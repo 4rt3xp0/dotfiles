@@ -1,0 +1,2 @@
+#!/bin/sh
+systemctl $(echo -e "suspend\nreboot\npoweroff" | rofi -dmenu)
