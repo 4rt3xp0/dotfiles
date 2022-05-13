@@ -121,6 +121,7 @@ bindsym $mod+Shift+a focus child
 # move the currently focused window to the scratchpad
 # bindsym $mod+Shift+minus move scratchpad
 bindcode $mod+Shift+20 move scratchpad
+bindsym Shift+F12 move scratchpad
 
 # show the next scratchpad window or hide the focused scratchpad window
 # bindsym $mod+minus scratchpad show
