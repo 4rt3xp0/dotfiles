@@ -29,4 +29,4 @@ alias dot="/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME"
 alias m='cmus'
 alias n='newsboat'
 alias z='zathura'
-alias lf='lf-ueberzug .'
+alias lf='lf-ueberzug'
