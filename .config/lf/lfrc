@@ -1,3 +1,4 @@
+# vim ft=conf
 set hidden true
 set ignorecase true
 set icons true
@@ -29,9 +30,17 @@ cmd unarchive ${{
   esac
 }}
 
-# Execute exe
+cmd open ${{
+    test -L $f && f=$(readlink -f $f)
+    case $(file --mime-type $f -b) in
+        application/*) "$f"; read;;
+        text/*) "$EDITOR" "$f";;
+        *) for f in "$fx"; do xdg-open "$f" > /dev/null 2> /dev/null & done;;
+    esac
+}}
+
 cmd execute ${{
-	wine "$f"
+    "$f"; read
 }}
 
 # Bindings
@@ -42,8 +51,6 @@ map n
 map "'"
 map '"'
 map d
-
-#map c $vscodium "$f"
 
 map au unarchive
 map ae execute
@@ -61,8 +68,8 @@ map md mkdir
 map C clear
 
 # Movement
-map gd cd ~/Documents
-map gD cd ~/Downloads
-map gp cd ~/Pictures
+map gd cd ~/dox
+map gD cd ~/dl
+map gp cd ~/pix
 map gc cd ~/.config
 map gs cd ~/.local/bin
