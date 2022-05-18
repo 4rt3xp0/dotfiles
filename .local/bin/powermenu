@@ -1,2 +1,2 @@
 #!/bin/sh
-systemctl $(echo -e "suspend\nreboot\npoweroff" | rofi -dmenu)
+$(echo -e "i3lock-fancy\nsystemctl suspend\nreboot\npoweroff" | rofi -dmenu)
