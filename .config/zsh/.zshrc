@@ -6,7 +6,7 @@ zstyle ':omz:update' mode disabled
 plugins=(colored-man-pages)
 source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-completions/zsh-completions.plugin.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/doc/find-the-command/ftc.zsh quiet info
 source /usr/share/fzf/key-bindings.zsh
 source "$XDG_CONFIG_HOME/aliasrc"
