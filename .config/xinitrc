@@ -19,5 +19,6 @@ picom --experimental-backends &
 unclutter &
 nm-applet &
 blueman-applet &
+redshift-gtk -l 45.57:19.64 &
 clipmenud &
 exec i3 >/dev/null 2>&1
