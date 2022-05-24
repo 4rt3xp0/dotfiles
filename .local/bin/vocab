@@ -1,0 +1,5 @@
+#!/bin/sh
+
+word=$(echo "" | dmenu -p "Add word" -fn "MesloLGS Nerd Font:style=Regular:pixelsize=18")
+meaning=$(echo "" | dmenu -p "Add meaning" -fn "MesloLGS Nerd Font:style=Regular:pixelsize=18")
+echo "$word = $meaning" >> $XDG_DATA_HOME/words

@@ -1,0 +1,3 @@
+#!/bin/sh
+mimetype -b "$1"
+xdg-mime query default $(mimetype -b "$1")
