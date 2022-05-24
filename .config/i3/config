@@ -177,19 +177,19 @@ for_window [class="Xarchiver"] floating enable
 for_window [class="Nitrogen"] floating enable
 for_window [class="supertuxkart"] floating disable
 
-assign [class="firefox"] $ws2
-assign [class="Hexchat"] $ws3
-assign [class="qtox"] $ws3
-assign [instance="newsboat"] $ws4
-assign [class="Audacious"] $ws5
-assign [class="mpv"] $ws5
+assign [class="(?i)firefox"] $ws2
+assign [class="(?i)hexchat"] $ws3
+assign [class="(?i)qtox"] $ws3
+assign [instance="(?i)newsboat"] $ws4
+assign [class="(?i)audacious"] $ws5
+# assign [class="(?i)mpv"] $ws5
 assign [class="(?i)soffice"] $ws7
 assign [class="(?i)libreoffice.*"] $ws7
-assign [class="Gimp"] $ws8
-assign [class="Inkscape"] $ws8
-assign [class="KeePassXC"] $ws9
-assign [class="Transmission-gtk"] $ws9
-assign [class="qBittorrent"] $ws9
+assign [class="(?i)gimp"] $ws8
+assign [class="(?i)inkscape"] $ws8
+assign [class="(?i)keepassxc"] $ws9
+assign [class="(?i)transmission-gtk"] $ws9
+assign [class="(?i)qbittorrent"] $ws9
 
 bindcode $mod+49 workspace number $ws0
 bindsym $mod+1 workspace number $ws1
