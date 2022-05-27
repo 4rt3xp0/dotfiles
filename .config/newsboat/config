@@ -26,3 +26,5 @@ bind-key a toggle-article-read
 bind-key n next-unread
 bind-key N prev-unread
 bind-key s toggle-show-read-feeds
+highlight feedlist "---.*---" yellow default bold
+highlight feedlist ".*0/0.." default default invis
