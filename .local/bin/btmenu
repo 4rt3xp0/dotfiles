@@ -1,0 +1,2 @@
+#!/bin/sh
+pactl set-card-profile bluez_card.74_45_CE_38_FD_94 $(echo -e "a2dp-sink\nheadset-head-unit" | rofi -dmenu)

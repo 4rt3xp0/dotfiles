@@ -45,7 +45,7 @@ mode "$mode_launcher" {
     bindsym k exec screenkey; mode "default"
     bindsym Shift+k exec killall screenkey; mode "default"
     bindsym l exec lxrandr; mode "default"
-    bindsym m exec pactl set-card-profile bluez_card.74_45_CE_38_FD_94 $(echo -e "a2dp-sink\nheadset-head-unit" | rofi -dmenu); mode "default"
+    bindsym m exec btmenu; mode "default"
     bindsym v exec virt-manager; exec systemctl is-active --quiet libvirtd || systemctl start --quiet libvirtd; mode "default"
     bindsym a exec audacious; mode "default"
     bindsym r exec alacritty --class=newsboat --title=newsboat -e newsboat; mode "default"
