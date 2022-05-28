@@ -56,6 +56,7 @@ gimp
 git
 github-cli
 gnome-themes-extra
+gpa
 gparted
 grub
 gst-plugin-pipewire
@@ -95,7 +96,6 @@ lxrandr-gtk3
 man-db
 man-pages
 mesa-vdpau
-mlocate
 mpc
 mpd
 mpv
@@ -121,6 +121,7 @@ pass
 pass-otp
 pavucontrol
 pcmanfm
+php
 picom
 pipewire
 pipewire-alsa
@@ -128,6 +129,7 @@ pipewire-jack
 pipewire-media-session
 pipewire-pulse
 playerctl
+plocate
 polkit-gnome
 powerline-fonts
 powertop
@@ -137,8 +139,10 @@ pv
 pwgen
 python-pillow
 python-pip
+qbittorrent
 qtox
 ranger
+redshift
 ripgrep
 rofi
 rsync
@@ -147,7 +151,7 @@ rxvt-unicode
 screen
 screenkey
 scrot
-sdl
+sdl12-compat
 sdl2_ttf
 sdl_ttf
 sl
