@@ -2,7 +2,6 @@ absolutely-proprietary
 activate-linux-git
 audacious-gtk3
 audacious-plugins-gtk3
-brillo
 cht.sh-git
 find-the-command
 gti
@@ -10,7 +9,6 @@ hardinfo-git
 i3lock-fancy-git
 i3-swallow-git
 lf
-mkinitcpio-numlock
 nerd-fonts-complete
 nsxiv
 paru
@@ -20,7 +18,6 @@ toilet
 toilet-fonts
 vitetris
 vrms-arch-git
-xkblayout-state-git
 xkb-switch
 xvi-git
 ytfzf
