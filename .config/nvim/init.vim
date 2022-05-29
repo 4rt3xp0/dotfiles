@@ -11,6 +11,7 @@ set scrolloff=4
 set tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent
 set wrap linebreak
 set ruler laststatus=2
+au VimLeave,VimSuspend * set guicursor=a:ver90
 
 call plug#begin()
 Plug 'gruvbox-community/gruvbox'
