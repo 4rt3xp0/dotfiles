@@ -11,7 +11,7 @@ general {
 
 #order += "ipv6"
 order += "wireless wlan0"
-order += "ethernet enp2s0"
+order += "ethernet eth0"
 #order += "load"
 order += "volume master"
 order += "read_file BRIGHTNESS"
@@ -29,7 +29,7 @@ wireless wlan0 {
     #color_bad = "#888888"
 }
 
-ethernet enp2s0 {
+ethernet eth0 {
     # if you use %speed, i3status requires the cap_net_admin capability
     format_up = " %ip"
     format_down = " down"
