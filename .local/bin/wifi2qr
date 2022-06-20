@@ -1,0 +1,112 @@
+#!/bin/bash
+
+if ! which nmcli qrencode >/dev/null; then
+    echo "ERROR: nmcli, qrencode not found in path" >&2
+    exit 1
+fi
+
+# Parse arguments
+
+show_list=false
+show_help=false
+quiet=false
+mode=UTF8
+fn=
+while getopts lhaiqo: optval; do
+    case $optval in
+        l) show_list=true ;;
+        h) show_help=true ;;
+        a) mode=ANSI ;;
+        o) fn="$OPTARG"; ext=$(sed 's|^.*\.\(.*\)|\U\1|' <<< "$fn"); mode=${ext:-PNG} ;;
+        i) mode=DISPLAY; if ! which display >/dev/null; then echo "ERROR: display not found in path" >&2; exit 1; fi ;;
+        q) quiet=true ;;
+        \?) show_help=true ;;
+    esac
+done
+shift $(( $OPTIND - 1 ))
+
+if [[ $show_list != true && $show_help != true ]]; then
+    if [[ $# -eq 1 ]]; then
+        conn="$1"
+    elif [[ $# -eq 0 ]]; then
+        conn="$(nmcli -t -f type,active,name connection show --active | grep '^802-11-wireless:' | cut -d: -f3 | head -n1)"
+        if [[ -z "$conn" ]]; then
+            echo "ERROR: no WiFi network active; specify connection name" >&2
+            show_help=true
+        else
+            echo "Using current WiFi connection '$conn' ..." >&2
+        fi
+    else
+        show_help=true
+    fi
+fi
+
+if [[ $show_help == true ]]; then
+    echo "$(basename $0) [-h] [-l] [-a | -i | -o FILE] [connection]" >&2
+    echo >&2
+    echo "Displays a QR code that can be scanned to connect to a WiFi network" >&2
+    echo "known to NetworkManager." >&2
+    echo >&2
+    echo "Options:" >&2
+    echo "  connection    Show QR code for specific connection (if not" >&2
+    echo "                specified, currently-enabled WiFi connection)" >&2
+    echo "  -h            Show this help message" >&2
+    echo "  -l            List WiFi connections known to NetworkManager" >&2
+    echo "  -a | -i       Show QR code using ANSI characters or with ImageMagick" >&2
+    echo "     | -o FILE  or save to a file (e.g. qrcode.png)" >&2
+    echo "                (default is to show using UTF8 characters)" >&2
+    echo "  -q            Quiet mode (default is to print barcode in text" >&2
+    echo "                form to stderr as well; this suppresses it)" >&2
+    exit 1
+elif [[ $show_list == true ]]; then
+    IFS=:
+    echo "Known WiFi connections:" >&2
+    nmcli -s -t -f "name,type" conn |
+    while read name type
+    do
+        [[ "$type" == "802-11-wireless" ]] && echo "  $name" >&2
+    done
+    exit 1
+fi
+
+# Read connection parameters
+shopt -s lastpipe
+IFS=:
+unset ssid hidden pass eap
+
+nmcli -s -t -f "connection.type,802-11-wireless.ssid,802-11-wireless.hidden,802-11-wireless-security.psk,802-1x.eap,802-1x.anonymous-identity,802-1x.identity" conn show "$conn" |
+while read parm val
+do
+    if [[ "$parm" == "connection.type" && "$val" != "802-11-wireless" ]]; then
+        echo "ERROR: connection '$conn' is $val, not WiFi" 2>&1;
+        exit 1;
+    elif [[ "$parm" == "802-11-wireless.ssid" ]]; then
+        ssid="S:\"$val\";"
+    elif [[ "$parm" == "802-11-wireless.hidden" && "$val" == "yes" ]]; then
+        hidden="H:true;"
+    elif [[ "$parm" == "802-11-wireless-security.psk" ]]; then
+        pass="T:WPA;"
+        [[ -n "$val" ]] && pass+="P:\"$val\";"
+    elif [[ "$parm" == "802-1x.eap" && -n "$val" ]]; then
+        eap+="E:$val;"
+    elif [[ "$parm" == "802-1x.anonymous-identity" && -n "$val" ]]; then
+        eap+="A:\"$val\";"
+    elif [[ "$parm" == "802-1x.identity" && -n "$val" ]]; then
+        eap+="I:\"$val\";"
+    fi
+done
+
+[[ -z "$ssid" ]] && echo "ERROR: could not parse nmcli output" >&2 && exit 1
+
+barcode="WIFI:${ssid}${pass}${hidden}${eap};"
+if [[ $mode == ANSI || $mode == UTF8 ]]; then
+    qrencode -t "$mode" -o- "$barcode"
+elif [[ $mode == DISPLAY ]]; then
+    qrencode -t PNG -o- "$barcode" |
+        display -geometry -0-0 -sample 300% -title "Share WiFi: $ssid" - &
+else
+    qrencode -t "$mode" -o "$fn" "$barcode"
+fi
+if [[ $quiet != true ]]; then
+    echo "$barcode" >&2
+fi
