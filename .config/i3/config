@@ -55,6 +55,7 @@ mode "$mode_launcher" {
 }
 
 bindsym $mod+Shift+p exec --no-startup-id powermenu
+bindsym $mod+t exec --no-startup-id toggle
 
 # change focus
 bindsym $mod+h focus left
