@@ -1,9 +1,5 @@
 #!/bin/sh
-setxkbmap us,hu -variant ,qwerty
-setxkbmap -option "caps:swapescape"
-# xmodmap -e 'keycode 66 = Escape'
-# xmodmap -e 'keycode 9 = Caps_Lock'
-# xmodmap -e 'clear lock'
+setxkbmap us,hu -variant ,qwerty -option "grp:caps:swapescape"
 xrandr --output eDP --set TearFree on &
 numlockx on &
 xrdb "$XDG_CONFIG_HOME/Xresources"
