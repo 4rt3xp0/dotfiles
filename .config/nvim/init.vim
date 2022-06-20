@@ -12,6 +12,7 @@ set tabstop=4 softtabstop=4 shiftwidth=4 expandtab autoindent
 set wrap linebreak
 set ruler laststatus=2
 au VimLeave,VimSuspend * set guicursor=a:ver90
+au VimEnter * silent exec "!kill -s SIGWINCH $PPID"
 
 call plug#begin()
 Plug 'gruvbox-community/gruvbox'
@@ -27,7 +28,6 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'lambdalisue/suda.vim'
 Plug 'junegunn/fzf.vim'
-Plug 'ThePrimeagen/vim-be-good'
 call plug#end()
 
 " set termguicolors
