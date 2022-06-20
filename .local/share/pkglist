@@ -22,6 +22,7 @@ blueman
 bluez-utils
 brightnessctl
 bsd-games
+btop
 calcurse
 calibre
 chafa
@@ -77,6 +78,7 @@ inkscape
 irssi
 iwd
 keepassxc
+leveldb
 libdca
 libdv
 libmad
@@ -97,6 +99,7 @@ lxrandr-gtk3
 man-db
 man-pages
 mesa-vdpau
+mlocate
 mpc
 mpd
 mpv
@@ -130,7 +133,6 @@ pipewire-jack
 pipewire-media-session
 pipewire-pulse
 playerctl
-plocate
 polkit-gnome
 powerline-fonts
 powertop
@@ -147,6 +149,7 @@ redshift
 ripgrep
 rofi
 rsync
+rtaudio
 rust
 rxvt-unicode
 screen
