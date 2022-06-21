@@ -23,6 +23,7 @@ bluez-utils
 brightnessctl
 bsd-games
 btop
+calc
 calcurse
 calibre
 chafa
@@ -57,6 +58,7 @@ gdb
 gimp
 git
 github-cli
+glow
 gnome-themes-extra
 gpa
 gparted
@@ -118,6 +120,7 @@ ntfs-3g
 ntp
 numlockx
 openbsd-netcat
+os-prober
 p7zip
 pacutils
 papirus-icon-theme
