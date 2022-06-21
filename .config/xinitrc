@@ -1,5 +1,5 @@
 #!/bin/sh
-setxkbmap us,hu -variant ,qwerty -option "caps:swapescape"
+setxkbmap us,hu -variant ,qwerty -model pc105 -option "caps:swapescape"
 xrandr --output eDP --set TearFree on &
 numlockx on &
 xrdb "$XDG_CONFIG_HOME/Xresources"
