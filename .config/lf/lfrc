@@ -31,8 +31,8 @@ cmd unarchive ${{
 }}
 
 cmd open ${{
-    test -L $f && f=$(readlink -f $f)
-    case $(file --mime-type $f -b) in
+    test -L "$f" && f=$(readlink -f "$f")
+    case $(file --mime-type "$f" -b) in
         application/*) "$f"; read;;
         text/*) "$EDITOR" "$f";;
         *) for f in "$fx"; do xdg-open "$f" > /dev/null 2> /dev/null & done;;
