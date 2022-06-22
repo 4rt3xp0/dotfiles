@@ -33,9 +33,9 @@ cmd unarchive ${{
 cmd open ${{
     test -L "$f" && f=$(readlink -f "$f")
     case $(file --mime-type "$f" -b) in
-        application/*) "$f"; read;;
+        application/x-*) "$f"; read;;
         text/*) "$EDITOR" "$f";;
-        *) for f in "$fx"; do xdg-open "$f" > /dev/null 2> /dev/null & done;;
+        *) for f in "$fx"; do setsid -f xdg-open "$f" >/dev/null 2>&1 & disown; done;;
     esac
 }}
 
@@ -46,7 +46,6 @@ cmd execute ${{
 # Bindings
 # Remove some defaults
 map m
-map o
 map n
 map "'"
 map '"'
@@ -62,6 +61,7 @@ map p paste
 map x cut
 map y copy
 map <enter> open
+map o open
 map R reload
 map mf mkfile
 map md mkdir
