@@ -22,6 +22,7 @@ export PASSWORD_STORE_CLIP_TIME=10
 export CM_SELECTIONS="clipboard"
 export GOPATH="$XDG_DATA_HOME/go"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
+export WINEPREFIX="$XDG_DATA_HOME/wine"
 export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonrc"
 export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
 export FZF_ALT_C_COMMAND="find . -mindepth 1 -type d 2>/dev/null"
