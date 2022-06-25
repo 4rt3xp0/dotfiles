@@ -80,6 +80,7 @@ inkscape
 irssi
 iwd
 keepassxc
+kernel-modules-hook
 leveldb
 libdca
 libdv
@@ -122,12 +123,14 @@ numlockx
 openbsd-netcat
 os-prober
 p7zip
+pacman-contrib
 pacutils
 papirus-icon-theme
 pass
 pass-otp
 pavucontrol
 pcmanfm
+pdfjs
 php
 picom
 pipewire
@@ -143,10 +146,12 @@ procinfo-ng
 pulsemixer
 pv
 pwgen
+python-adblock
 python-pillow
 python-pip
 qbittorrent
 qtox
+qutebrowser
 ranger
 redshift
 ripgrep
