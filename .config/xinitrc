@@ -8,14 +8,14 @@ xset -b
 brightnessctl g > "$XDG_RUNTIME_DIR/brightness"
 xkb-switch -p | cut -c 1-2 > "$XDG_RUNTIME_DIR/layout"
 
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-/usr/lib/geoclue-2.0/demos/agent &
-nitrogen --restore &
-dunst &
-picom --experimental-backends &
-unclutter &
-nm-applet &
-blueman-applet &
-redshift-gtk &
-clipmenud &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 >/dev/null 2>&1 &
+/usr/lib/geoclue-2.0/demos/agent >/dev/null 2>&1 &
+nitrogen --restore >/dev/null 2>&1 &
+dunst >/dev/null 2>&1 &
+picom --experimental-backends >/dev/null 2>&1 &
+unclutter >/dev/null 2>&1 &
+nm-applet >/dev/null 2>&1 &
+blueman-applet >/dev/null 2>&1 &
+redshift-gtk >/dev/null 2>&1 &
+clipmenud >/dev/null 2>&1 &
 exec i3 >/dev/null 2>&1
