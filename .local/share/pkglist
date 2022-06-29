@@ -41,6 +41,8 @@ dmenu
 duf
 dunst
 efibootmgr
+electrum
+engrampa
 espeak-ng
 ethtool
 exfatprogs
@@ -63,6 +65,7 @@ gnome-themes-extra
 gpa
 gparted
 grub
+grub-customizer
 gst-plugin-pipewire
 gtk-engine-murrine
 gtk-engines
@@ -151,6 +154,7 @@ pwgen
 python-adblock
 python-pillow
 python-pip
+python-qdarkstyle
 qbittorrent
 qtox
 qutebrowser
@@ -189,6 +193,7 @@ texlive-pstricks
 texlive-publishers
 texlive-science
 the_silver_searcher
+thunderbird
 tk
 tldr
 tlp
