@@ -172,12 +172,15 @@ for_window [window_role="bubble"] floating enable
 for_window [window_role="task_dialog"] floating enable
 for_window [window_type="dialog"] floating enable
 for_window [window_type="menu"] floating enable
-for_window [class="Nm-connection-editor"] floating enable
-for_window [class="Blueman-manager"] floating enable
-for_window [class="Pavucontrol"] floating enable
-for_window [class="Xarchiver"] floating enable
-for_window [class="Nitrogen"] floating enable
-for_window [class="supertuxkart"] floating disable
+for_window [class="(?i)nm-connection-editor"] floating enable
+for_window [class="(?i)blueman-manager"] floating enable
+for_window [class="(?i)pavucontrol"] floating enable
+for_window [class="(?i)xarchiver"] floating enable
+for_window [class="(?i)engrampa"] floating enable
+for_window [class="(?i)nitrogen"] floating enable
+for_window [class="(?i)gpa"] floating enable
+for_window [class="(?i)electrum"] floating enable
+for_window [class="(?i)supertuxkart"] floating disable
 
 assign [class="(?i)firefox"] $ws2
 assign [instance="(?i)navigator"] $ws2
@@ -186,15 +189,18 @@ assign [class="(?i)TelegramDesktop"] $ws3
 assign [class="(?i)hexchat"] $ws3
 assign [class="(?i)qtox"] $ws3
 assign [instance="(?i)newsboat"] $ws4
+assign [class="(?i)thunderbird"] $ws4
 assign [class="(?i)audacious"] $ws5
 # assign [class="(?i)mpv"] $ws5
 assign [class="(?i)soffice"] $ws7
 assign [class="(?i)libreoffice.*"] $ws7
 assign [class="(?i)gimp"] $ws8
 assign [class="(?i)inkscape"] $ws8
-assign [class="(?i)keepassxc"] $ws9
 assign [class="(?i)transmission-gtk"] $ws9
 assign [class="(?i)qbittorrent"] $ws9
+assign [class="(?i)keepassxc"] $ws10
+assign [class="(?i)gparted"] $ws10
+assign [class="(?i)grub-customizer"] $ws10
 
 bindcode $mod+49 workspace number $ws0
 bindsym $mod+1 workspace number $ws1
