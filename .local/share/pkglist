@@ -20,6 +20,7 @@ beep
 bind
 blueman
 bluez-utils
+bpytop
 brightnessctl
 bsd-games
 btop
@@ -145,6 +146,7 @@ pipewire-media-session
 pipewire-pulse
 playerctl
 polkit-gnome
+polybar
 powerline-fonts
 powertop
 procinfo-ng
