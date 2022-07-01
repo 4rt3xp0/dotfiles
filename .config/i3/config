@@ -183,7 +183,7 @@ for_window [class="(?i)electrum"] floating enable
 for_window [class="(?i)supertuxkart"] floating disable
 
 assign [class="(?i)firefox"] $ws2
-assign [instance="(?i)navigator"] $ws2
+assign [class="(?i)qutebrowser"] $ws2
 assign [class="(?i)discord"] $ws3
 assign [class="(?i)TelegramDesktop"] $ws3
 assign [class="(?i)hexchat"] $ws3
