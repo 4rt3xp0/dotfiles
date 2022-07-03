@@ -57,8 +57,6 @@ shell:
 key_bindings:
   - { key: PageUp, mods: Shift, action: ScrollHalfPageUp }
   - { key: PageDown, mods: Shift, action: ScrollHalfPageDown }
-  - { key: U, mods: Control|Shift, action: ScrollHalfPageUp }
-  - { key: D, mods: Control|Shift, action: ScrollHalfPageDown }
   - { key: Up, mods: Shift, action: ScrollLineUp }
   - { key: Down, mods: Shift, action: ScrollLineDown }
   - { key: K, mods: Control|Shift, action: ScrollLineUp }
