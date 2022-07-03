@@ -107,6 +107,8 @@ man-db
 man-pages
 mesa-vdpau
 mlocate
+monero
+monero-gui
 mpc
 mpd
 mpv
@@ -142,7 +144,6 @@ picom
 pipewire
 pipewire-alsa
 pipewire-jack
-pipewire-media-session
 pipewire-pulse
 playerctl
 polkit-gnome
@@ -223,6 +224,7 @@ wget
 whois
 wine
 wireless_tools
+wireplumber
 wmctrl
 words
 wtf
