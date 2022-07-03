@@ -16,6 +16,7 @@ font pango: Hack Nerd Font 9
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id $TERMINAL
+bindsym $mod+Shift+Return exec --no-startup-id xterm
 
 # kill focused window
 bindsym $mod+Shift+q kill
