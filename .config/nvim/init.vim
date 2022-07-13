@@ -80,7 +80,7 @@ autocmd FileType cpp setlocal commentstring=//%s
 autocmd FileType c setlocal commentstring=//%s
 
 let mapleader=" "
-nnoremap <leader>p :PlugUpdate<CR>
+nnoremap <leader>p :PlugUpdate<CR>:PlugUpgrade<CR>
 nnoremap <leader>P :PlugInstall<CR>:PlugClean<CR>
 nnoremap <leader>c :checkhealth<CR>
 nnoremap <leader>r :source ~/.config/nvim/init.vim<CR>
