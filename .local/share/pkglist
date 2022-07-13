@@ -29,7 +29,6 @@ calcurse
 calibre
 chafa
 clipmenu
-cmatrix
 cmus
 conky
 cowsay
@@ -74,6 +73,7 @@ gvfs
 hexchat
 highlight
 htop
+hugo
 hwinfo
 i3-gaps
 i3lock
@@ -83,6 +83,7 @@ inetutils
 inkscape
 irssi
 iwd
+jp2a
 keepassxc
 kernel-modules-hook
 leveldb
@@ -112,6 +113,7 @@ monero-gui
 mpc
 mpd
 mpv
+mumble
 nano
 ncdu
 neofetch
