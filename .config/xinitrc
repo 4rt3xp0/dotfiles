@@ -18,5 +18,7 @@ nm-applet >/dev/null 2>&1 &
 blueman-applet >/dev/null 2>&1 &
 redshift-gtk >/dev/null 2>&1 &
 clipmenud >/dev/null 2>&1 &
-# py -m http.server 42069 --directory ~/.local/share/weboasis/ >/dev/null 2>&1 &
+
 exec i3 >/dev/null 2>&1
+# slstatus >/dev/null 2>&1 &
+# exec dwm >/dev/null 2>&1
