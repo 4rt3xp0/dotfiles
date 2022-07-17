@@ -205,6 +205,7 @@ tlp
 tlp-rdw
 tmux
 torbrowser-launcher
+torsocks
 transmission-cli
 transmission-gtk
 trash-cli
